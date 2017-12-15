@@ -93,15 +93,25 @@
 
 
 
-<meta name="description" content="一个正在学习的码农">
-<meta property="og:type" content="website">
-<meta property="og:title" content="记录学习路程">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="关于项目这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能这个项目本来是校内实训，需要用java编写，我负责一部分。但是我不太喜欢用java，且时间足够，就自己独自做了一份，用于学习。项目的功能和需求是根据前期小组讨论出来的，也基本都是仿饿了么的各项功能基本都实现了线上地址：(比较慢)47.93.254.91:3333源码地址：chihuobao 12345登录账号：  用户:1234">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue+koa2+mongodb点餐系统总结">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/index.html">
 <meta property="og:site_name" content="记录学习路程">
-<meta property="og:description" content="一个正在学习的码农">
+<meta property="og:description" content="关于项目这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能这个项目本来是校内实训，需要用java编写，我负责一部分。但是我不太喜欢用java，且时间足够，就自己独自做了一份，用于学习。项目的功能和需求是根据前期小组讨论出来的，也基本都是仿饿了么的各项功能基本都实现了线上地址：(比较慢)47.93.254.91:3333源码地址：chihuobao 12345登录账号：  用户:1234">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/gongneng.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/0cengsheji.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/place.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/order.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/seller.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/admin.png">
+<meta property="og:image" content="https://vuex.vuejs.org/zh-cn/images/flow.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/shuju.png">
+<meta property="og:updated_time" content="2017-12-15T15:10:06.573Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="记录学习路程">
-<meta name="twitter:description" content="一个正在学习的码农">
+<meta name="twitter:title" content="vue+koa2+mongodb点餐系统总结">
+<meta name="twitter:description" content="关于项目这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能这个项目本来是校内实训，需要用java编写，我负责一部分。但是我不太喜欢用java，且时间足够，就自己独自做了一份，用于学习。项目的功能和需求是根据前期小组讨论出来的，也基本都是仿饿了么的各项功能基本都实现了线上地址：(比较慢)47.93.254.91:3333源码地址：chihuobao 12345登录账号：  用户:1234">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/gongneng.png">
 
 
 
@@ -129,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/"/>
 
 
 
@@ -144,7 +154,7 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-  <title>记录学习路程</title>
+  <title>vue+koa2+mongodb点餐系统总结 | 记录学习路程</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -180,9 +190,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,9 +273,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -293,9 +301,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/14/vue-koa2-mongodb点餐系统总结/" itemprop="url">vue+koa2+mongodb点餐系统总结</a></h1>
+          <h1 class="post-title" itemprop="name headline">vue+koa2+mongodb点餐系统总结</h1>
         
 
         <div class="post-meta">
@@ -364,9 +370,7 @@
       
 
       
-        
-          
-            <h1 id="关于项目"><a href="#关于项目" class="headerlink" title="关于项目"></a>关于项目</h1><p>这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能<br>这个项目本来是校内实训，需要用java编写，我负责一部分。但是我不太喜欢用java，且时间足够，就自己独自做了一份，用于学习。<br>项目的功能和需求是根据前期小组讨论出来的，也基本都是仿饿了么的<br>各项功能基本都实现了<br>线上地址：(比较慢)<a href="http://47.93.254.91:3333" target="_blank" rel="external">47.93.254.91:3333</a><br>源码地址：<a href="https://github.com/ooooevan/chihuobao" target="_blank" rel="external">chihuobao</a></p>
+        <h1 id="关于项目"><a href="#关于项目" class="headerlink" title="关于项目"></a>关于项目</h1><p>这是一个点餐系统，包含用户点餐、商家出餐、管理员管理三部分功能<br>这个项目本来是校内实训，需要用java编写，我负责一部分。但是我不太喜欢用java，且时间足够，就自己独自做了一份，用于学习。<br>项目的功能和需求是根据前期小组讨论出来的，也基本都是仿饿了么的<br>各项功能基本都实现了<br>线上地址：(比较慢)<a href="http://47.93.254.91:3333" target="_blank" rel="external">47.93.254.91:3333</a><br>源码地址：<a href="https://github.com/ooooevan/chihuobao" target="_blank" rel="external">chihuobao</a></p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">登录账号：</div><div class="line">  用户:12345678910</div><div class="line">  商家:11112222333</div><div class="line">  管理员:admin2</div><div class="line">登录密码都是123456</div></pre></td></tr></table></figure>
 <h2 id="功能结构"><a href="#功能结构" class="headerlink" title="功能结构"></a>功能结构</h2><p><img src="/2017/12/14/vue-koa2-mongodb点餐系统总结/gongneng.png" alt=""><br><img src="/2017/12/14/vue-koa2-mongodb点餐系统总结/0cengsheji.png" alt=""></p>
 <h2 id="调试运行"><a href="#调试运行" class="headerlink" title="调试运行"></a>调试运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">npm run dev</div><div class="line"></div><div class="line">cd server                 #打开koa2后台，会开启3333端口</div><div class="line">npm install</div><div class="line">node bin/www</div></pre></td></tr></table></figure>
@@ -432,20 +436,27 @@
 <figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="section"># d是数据库名，c是collection名</span></div><div class="line">mongoimport -d vue -c users --file vue/users.json</div></pre></td></tr></table></figure>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>总体来说，项目结构还算清晰，我对Vue还不是很熟悉，所以运用的还不是很好，比如使用Vuex的使用，我对于不同组件需要共享的数据存入store或同时存在本地，对于单个组件内的数据，感觉没必要存入store。<br>对koa2也不是很熟悉，一开始总是忘记await等各种小问题，写完虽然做了缓存压缩，因为不是一个后端，所以性能上还是弄不好，线上的可能比较卡，因为是学生服务器。<br>写完这个对Vue熟悉一点了，接下来会继续学学Vue的原理，学学新东西<br>以上就是对项目的总结，如果有错，望指正</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -453,347 +464,38 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Evan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/okgo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="记录学习路程">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/18/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-18T00:47:10+08:00">
-                2017-10-18
-              </time>
+              <a href="/2017/10/18/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/10/18/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/18/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/10/18/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/07/react-redux-router-echarts可视化项目总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Evan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/okgo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="记录学习路程">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/07/react-redux-router-echarts可视化项目总结/" itemprop="url">react+redux+router+echarts可视化项目总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-07T14:19:15+08:00">
-                2017-10-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/10/07/react-redux-router-echarts可视化项目总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/07/react-redux-router-echarts可视化项目总结/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/10/07/react-redux-router-echarts可视化项目总结/" class="leancloud_visitors" data-flag-title="react+redux+router+echarts可视化项目总结">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>项目来自于今年中国软件杯赛题：<a href="http://www.cnsoftbei.com/bencandy.php?fid=148&amp;aid=1515" target="_blank" rel="external">基于WIFI探针的商业大数据分析技术</a><br>赛题包括探针程序，数据分析程序，展示界面等，我做的是可视化展示部分和后台管理页面<br>这个仓库是数据可视化程序，将分析好的数据可视化的展示出来<br>因为后台是java写的，为了简单的产生数据，我用node写了个小后台，提供数据<br>可直接到我的服务器看：<a href="http://47.93.254.91:3000" target="_blank" rel="external">47.93.254.91:3000</a><br>源码地址：<a href="https://github.com/ooooevan/react-redux-echarts" target="_blank" rel="external">https://github.com/ooooevan/react-redux-echarts</a></p>
-<h3 id="功能结构"><a href="#功能结构" class="headerlink" title="功能结构"></a>功能结构</h3><p><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-modules.png" alt=""></p>
-<h2 id="调试运行"><a href="#调试运行" class="headerlink" title="调试运行"></a>调试运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure>
-<h2 id="打开数据后台"><a href="#打开数据后台" class="headerlink" title="打开数据后台"></a>打开数据后台</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd server/demo1</div><div class="line">npm start</div></pre></td></tr></table></figure>
-<p>我已经把打包好的dist文件拷贝到server的静态目录下，所以打开数据后台可以直接访问<a href="localhost:3000" target="_blank" rel="external">localhost:3000</a>看到页面</p>
-<h2 id="修改后打包"><a href="#修改后打包" class="headerlink" title="修改后打包"></a>修改后打包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run deploy</div></pre></td></tr></table></figure>
-<p>生成的文件在<code>dist</code>目录中。<br>因为是windows下，需要手动复制静态文件：<br>将<code>lib</code>目录复制到<code>dist</code>目录下，将<code>favicon.ico</code>复制到<code>dist</code>目录下。</p>
-<h2 id="页面截图"><a href="#页面截图" class="headerlink" title="页面截图"></a>页面截图</h2><p><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-whole.png" alt=""><br><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-allsellers.png" alt=""><br><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-sellershistory.png" alt=""></p>
-<h1 id="使用的相关技术"><a href="#使用的相关技术" class="headerlink" title="使用的相关技术"></a>使用的相关技术</h1><ul>
-<li>使用es6写法，安装一堆babel插件(现在有babel-preset-env可以少很多了)</li>
-<li>react、react-redux、react-router,页面结构较多，这样用是比较合适的。当然也可以用mobx</li>
-<li>使用了不可变数据，因为要渲染的数据层级深，用immutable很有必要</li>
-<li>使用webpack2做模块化，打包，做了代码分割加快首屏渲染</li>
-<li>使用百度的echarts做可视化</li>
-</ul>
-<h2 id="总体分析"><a href="#总体分析" class="headerlink" title="总体分析"></a>总体分析</h2><h3 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">lib：存放一些静态资源，这里我放了logo图片和字体文件</div><div class="line">server：调试时提供数据的node后台</div><div class="line">src：放代码的地方</div><div class="line">test：编写测试用例</div></pre></td></tr></table></figure>
-<p><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-category.png" alt=""><br>再看<code>src</code>目录下的结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">根据功能分为4个模块，分别为:firstPage、sellers、statics、compare</div><div class="line">对应概况、商家、统计分析、数据对比4个模块</div><div class="line">后面改了页面结构，所以这里的结构和调试页面会不一样，47.93.254.91:3000的页面是旧代码的，和这个结构完全对应</div><div class="line"></div><div class="line">─ src</div><div class="line"> ├── actions                         //分别是4个模块各自的action</div><div class="line"> │  ├── compareAction.js</div><div class="line"> │  ├── firstPageAction.js</div><div class="line"> │  ├── sellersAction.js</div><div class="line"> │  ├── staticsAction.js</div><div class="line"> ├── components                      //放各个模块的组件</div><div class="line"> │  ├── compare</div><div class="line"> │  ├── firstPage</div><div class="line"> │  ├── sellers</div><div class="line"> │  ├── statistics</div><div class="line"> │  ├── app.js                        //入口文件 </div><div class="line"> │  ├── calendar.js                   //一个日历组件</div><div class="line"> │  ├── devTool.js                    //一个调试插件，代码已经注释</div><div class="line"> │  ├── general.js                    //进入4个个模块的Nav组件</div><div class="line"> │  ├── notFindPage.js                //404页面</div><div class="line"> │  ├── tools.js                      //几个工具函数</div><div class="line"> ├── constants                        //放actionapi和actionType</div><div class="line"> ├── options                          //echarts对不同图形需要不同配置，都写在这里</div><div class="line"> ├── reducers                          </div><div class="line"> ├── store</div><div class="line"> ├── styles</div></pre></td></tr></table></figure></p>
-<h3 id="数据流向"><a href="#数据流向" class="headerlink" title="数据流向"></a>数据流向</h3><h4 id="总体流向"><a href="#总体流向" class="headerlink" title="总体流向"></a>总体流向</h4><p>使用的是redux，当然是 components-&gt;actions-&gt;reducers-&gt;components<br><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-datastreaming.png" alt=""></p>
-<h4 id="举个具体的例子"><a href="#举个具体的例子" class="headerlink" title="举个具体的例子"></a>举个具体的例子</h4><p>打开一个组件<br><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-dataexample1.png" alt=""><br>要经过的地方：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1. component执行生命周期，componentWillMount里产生一个获取数据的action</div><div class="line">2. action中发送一个异步请求</div><div class="line">3. component继续生命周期函数，render出页面骨架，调用echarts的init和showLoading，此时可以看到页面转圈提示加载中</div><div class="line">4. action中服务器返回数据，调用dispatch把此次action交给reducer处理</div><div class="line">5. reducer把原state和服务器的数据更新合并，交给component以渲染</div><div class="line">6. component中更新了数据，更新组件，执行echarts的setOption和hideLoading方法，渲染出了数据</div></pre></td></tr></table></figure></p>
-<p><img src="/2017/10/07/react-redux-router-echarts可视化项目总结/echarts-dataexample2.png" alt=""></p>
-<p>所有的数据流向都是这样，很清晰</p>
-<h1 id="项目遇到的问题"><a href="#项目遇到的问题" class="headerlink" title="项目遇到的问题"></a>项目遇到的问题</h1><h2 id="1-echarts实例对象放哪里"><a href="#1-echarts实例对象放哪里" class="headerlink" title="1. echarts实例对象放哪里"></a>1. echarts实例对象放哪里</h2><p>因为ehcarts要先初始化才能显示一个loading的图像，等数据返回才能渲染数据，但是这个实例化的对象放哪里呢？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">echartsExample = echarts.init(targetDom);</div><div class="line">echartsExample.showLoading();</div><div class="line">...</div><div class="line">echartsExample.setOption(Data);</div><div class="line">echartsExample.hideLoading();</div></pre></td></tr></table></figure></p>
-<p>一开始我把这个对象跟数据的流向一起，把对象当做参数，带到action再到reducer。<br>虽然这样也成功了，但是我发现，reducer是纯函数啊，怎么可以做这么不纯洁的操作呢，然后才想到，应该存在组件的state中。。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">this.state.echartsExample = echarts.init(targetDom);</div><div class="line">this.state.echartsExample.showLoading();</div><div class="line">...</div><div class="line">this.state.echartsExample.setOption(Data);</div><div class="line">this.state.echartsExample.hideLoading();</div></pre></td></tr></table></figure></p>
-<p>因为这个对象本身不是用来显示数据的，所以不用this.setState()而是直接赋值<br>这应该是个很弱智的问题，但是当时就是困扰了我。。</p>
-<h2 id="2-数据层级深导致数据出问题"><a href="#2-数据层级深导致数据出问题" class="headerlink" title="2. 数据层级深导致数据出问题"></a>2. 数据层级深导致数据出问题</h2><p>echarts要求的数据格式层级很深,随便就3,4层嵌套（应该所有的可视化数据都是这么深）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">sellersNum: &#123;</div><div class="line">    ...</div><div class="line">    color: [&apos;#c23531&apos;, &apos;#de9a48&apos;],</div><div class="line">    title: &#123;</div><div class="line">      text: &apos;客流量峰值对比&apos;,</div><div class="line">      show: false</div><div class="line">    &#125;,</div><div class="line">    toolbox: &#123;</div><div class="line">      feature: &#123;</div><div class="line">        dataView: &#123;show: true, readOnly: false&#125;,</div><div class="line">        magicType: &#123;show: true, type: [&apos;line&apos;, &apos;bar&apos;]&#125;,</div><div class="line">        restore: &#123;show: true&#125;,</div><div class="line">        saveAsImage: &#123;show: true&#125;</div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line">    ...</div><div class="line">  &#125;</div></pre></td></tr></table></figure></p>
-<p>在没有引入immutable时，我想让数据尽量快点渲染，在componentWillReceiveProps里执行渲染操作，却犯了个错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">componentWillReceiveProps()&#123;</div><div class="line">  //这个错误就是不应该用this.props.data，这是旧的数据，应该用nextProps.data</div><div class="line">  this.state.echartsExample.setOption(this.props.data);  </div><div class="line">  this.state.echartsExample.hideLoading();</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>当我发现这个错误时，却发现这么大错误没有导致页面任何异常。。<br>通过debugger才知道，原来我执行reducer时更改了原state，所以到这里时，this.props就等于nextProps<br>而更改了原state，肯定就是因为数据层级嵌套太深导致的。所以才引入的immutable,不改变原数据，返回新数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//若层级不深时，可以用Object.assign、slice、concat等方法更新state</div><div class="line">//当层级太深，怎么都显得太麻烦，用了immutable就很清晰了：</div><div class="line">return state.setIn([&apos;customerNum&apos;, &apos;xAxis&apos;, 0, &apos;data&apos;], data.time)</div><div class="line">            .setIn([&apos;customerNum&apos;, &apos;series&apos;, 0, &apos;data&apos;], data.num1)</div><div class="line">            .setIn([&apos;customerNum&apos;, &apos;series&apos;, 1, &apos;data&apos;], data.num2);</div></pre></td></tr></table></figure></p>
-<p>immutable和原生js对象不一样，不能互相使用方法的方法，所以引入immutable要多记几个api<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">let immutableObj = immutable.fromJS(obj);   //原始对象转为immutable对象</div><div class="line">let nativeObj = immutableObj.toJS();         //immutable对象转为原始对象</div><div class="line">...</div></pre></td></tr></table></figure></p>
-<p>两种对象互转比较消耗性能，能不转就不转，而且如果要在shouldComponentUpdate手动判断更新的话，用immutable很容易。<br>我这里的转化：reducer拿到服务器数据即转为immutable-&gt;更新state-&gt;组件使用-&gt;echarts渲染函数接收的参数要原始对象，所以在这里转为原始对象<br>immutable对象也有像原始对象那样一系列函数如map、forEach等，基本满足数据渲染要求，所以如果项目中没有echarts这样必须使用原始对象的，可以一直用immutable对象<br>还有就是combinereducer不支持immutable，需要用<code>redux-immutable</code>库重写了的combinereducer</p>
-<h2 id="3-打包文件过大"><a href="#3-打包文件过大" class="headerlink" title="3. 打包文件过大"></a>3. 打包文件过大</h2><p>打包生成最终文件，好几兆，太大，于是寻找减少大小的方法</p>
-<ol>
-<li><p>webpack配置压缩文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">new webpack.optimize.UglifyJsPlugin(&#123;</div><div class="line">  output:&#123;</div><div class="line">    comments:false,        //去掉所以注释</div><div class="line">  &#125;,</div><div class="line">  compress:&#123;</div><div class="line">    warnings:false</div><div class="line">  &#125;</div><div class="line">&#125;),</div></pre></td></tr></table></figure>
-</li>
-<li><p>代码切割，根据路由分成多个小文件，按需加载<br>有两个地方需要改：<br>1、路由</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//原来</div><div class="line">import Statistics from &apos;./statistics/statistics&apos;;</div><div class="line">&lt;Route path=&quot;statistics&quot; component=&#123;Statistics&#125; /&gt;</div><div class="line">//现在</div><div class="line">const Statistics = (location, callback) =&gt; &#123;</div><div class="line">  require.ensure([], (require) =&gt; &#123;</div><div class="line">    callback(null, require(&apos;./statistics/statistics&apos;).default);</div><div class="line">  &#125;, &apos;statistics&apos;);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>2.webpack配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">entry: &#123;</div><div class="line">    app: &apos;./src/components/app.js&apos;,</div><div class="line">    vendors:[&apos;react&apos;,&apos;react-dom&apos;]</div><div class="line">  &#125;,</div><div class="line">output: &#123;</div><div class="line">    path: path.join(__dirname, &apos;dist/&apos;),</div><div class="line">    publicPath: &apos;&apos;,</div><div class="line">    filename: &apos;[name]-[chunkhash:8].js&apos;,</div><div class="line">    chunkFilename: &apos;[name]-[chunkhash:8].js&apos;  //路由对应文件,chunkhash是将文件内容哈希</div><div class="line">  &#125;,</div></pre></td></tr></table></figure></p>
-<p>这样能分隔出多个文件，加载时只需加载公共的vendors和此路由需要的js文件，大大加快了首屏渲染<br>并且，用chunkhash能做版本控制，在修改代码后，只会使修改的部分文件的哈希改变，其他文件都没有变，这样，只需要看名字有没有变就可以知道哪些文件更新了，对部署很有帮助，请看:<a href="https://github.com/fouber/blog/issues/6" target="_blank" rel="external">大公司里怎样开发和部署前端代码？</a></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="函数去抖"><a href="#函数去抖" class="headerlink" title="函数去抖"></a>函数去抖</h2><p>因为echarts图像是canvas绘制的，当改变浏览器窗口大小时发现canvas不会变，此时要重新绘制图像。调用echarts提供的方法。并且是在window.resize触发时执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">this.state.allSellersLineChart.resize();</div></pre></td></tr></table></figure></p>
-<p>仅仅这样会发现，改变窗口大小时，会一直触发这个函数，就行onmousemove那样一直触发，这样就很浪费性能，严重会引起假死状态，所以要用函数去抖(类似还有函数节流)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">window.addEventListener(&apos;resize&apos;, this.resizeFun);</div><div class="line">resizeFun = () =&gt; &#123;</div><div class="line">    if (this.state.resizeHandler) &#123;</div><div class="line">      clearTimeout(this.state.resizeHandler);</div><div class="line">    &#125;</div><div class="line">    if (this.state.allSellersLineChart) &#123;</div><div class="line">      this.state.resizeHandler = setTimeout(() =&gt; &#123;</div><div class="line">        this.state.allSellersLineChart.resize();</div><div class="line">      &#125;, 100);</div><div class="line">    &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure></p>
-<p>代码很简单，监听resize事件，然后设置定时器，只要一定时间范围内又触发，则重新计时，知道最后不触发了再执行</p>
-<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>由于是已经结束的项目，就想不再修改了，但是缺点还是在的</p>
-<ul>
-<li>最大的缺点就是组件重用，大部分图形组件都是一样的，是可以共用一个组件，将数据传入进去的，我却一个图形一个组件，所以项目的这么多图像组件基本都是一样的</li>
-<li>scss没有模块化，开始想共用一些代码就没有分离，然后变成了全部样式全挤在一个文件里。。</li>
-<li>propTypes没写好，没有用typescript，类型检查是很有必要的，但是我偷懒很多都没写</li>
-<li>代码比较乱，很多代码和注释没有去掉</li>
-</ul>
-<p>这个部分是比较简单的，业务很简单（其实还有个管理后台，因为没有写后台提供数据就不放出来了）。但对react的理解还是挺有帮助的，写代码时另一大问题就是react生命周期、路由等问题，写着写着就懂一点了。<br>这是过了挺久才做的总结，所以有些都忘记了，只能写这么多，如果有错，望指正</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -801,6 +503,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -820,8 +533,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/okgo.jpg"
@@ -876,6 +598,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于项目"><span class="nav-number">1.</span> <span class="nav-text">关于项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#功能结构"><span class="nav-number">1.1.</span> <span class="nav-text">功能结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调试运行"><span class="nav-number">1.2.</span> <span class="nav-text">调试运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面截图"><span class="nav-number">1.3.</span> <span class="nav-text">页面截图</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总体分析"><span class="nav-number">2.</span> <span class="nav-text">总体分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用的框架、插件等"><span class="nav-number">2.1.</span> <span class="nav-text">使用的框架、插件等</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包含的功能"><span class="nav-number">2.2.</span> <span class="nav-text">包含的功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录结构"><span class="nav-number">2.3.</span> <span class="nav-text">目录结构</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开发过程"><span class="nav-number">3.</span> <span class="nav-text">开发过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用vue-cli"><span class="nav-number">3.1.</span> <span class="nav-text">使用vue-cli</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发遇到的问题"><span class="nav-number">3.2.</span> <span class="nav-text">开发遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vuex分模块的修改"><span class="nav-number">3.2.1.</span> <span class="nav-text">vuex分模块的修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父子组件通信"><span class="nav-number">3.2.2.</span> <span class="nav-text">父子组件通信</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#element-ui设置样式无效"><span class="nav-number">3.2.3.</span> <span class="nav-text">element-ui设置样式无效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监听-route要仔细"><span class="nav-number">3.2.4.</span> <span class="nav-text">监听$route要仔细</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#请求异常跳转登录页"><span class="nav-number">3.2.5.</span> <span class="nav-text">请求异常跳转登录页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#koa2基本配置"><span class="nav-number">3.2.6.</span> <span class="nav-text">koa2基本配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用koa生成器初始化项目"><span class="nav-number">3.2.6.1.</span> <span class="nav-text">使用koa生成器初始化项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加入session中间件"><span class="nav-number">3.2.6.2.</span> <span class="nav-text">加入session中间件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置静态资源缓存"><span class="nav-number">3.2.6.3.</span> <span class="nav-text">设置静态资源缓存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#传输文件压缩"><span class="nav-number">3.2.6.4.</span> <span class="nav-text">传输文件压缩</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mongoose使用遇到的坑"><span class="nav-number">3.2.7.</span> <span class="nav-text">mongoose使用遇到的坑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#moment解决mongodb时区问题"><span class="nav-number">3.2.8.</span> <span class="nav-text">moment解决mongodb时区问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">3.2.9.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#传输数据格式转换"><span class="nav-number">3.2.9.1.</span> <span class="nav-text">传输数据格式转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mongodb导入数据"><span class="nav-number">3.2.9.2.</span> <span class="nav-text">mongodb导入数据</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.2.10.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -989,10 +727,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -1010,6 +748,18 @@
       <script id="dsq-count-scr" src="https://ooooevan.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/12/14/vue-koa2-mongodb点餐系统总结/';
+          this.page.identifier = '2017/12/14/vue-koa2-mongodb点餐系统总结/';
+          this.page.title = 'vue+koa2+mongodb点餐系统总结';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ooooevan.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
